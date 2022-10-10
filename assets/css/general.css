@@ -1,0 +1,78 @@
+/* ------------------  GERENAL --------------*/
+@import url(root.css);
+@import url(buttons.css);
+@import url(general.css);
+@import url(reusable.css);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+img,
+input,
+a,
+span,
+ion-icon {
+  display: block;
+}
+
+input {
+  font: inherit;
+  border: none;
+}
+
+html {
+  font-family: var(--ff-roboto);
+  color: var(--quick-silver);
+  line-height: 1.3;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--rich-black-fogra-39);
+  min-width: 200px;
+}
+
+button,
+a,
+input,
+[tabindex] {
+  outline-offset: 4px;
+}
+
+.container {
+  padding: 0 12px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--rich-black-fogra-39);
+  border-left: 1px solid var(--onyx-1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--golden-puppy);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  --golden-puppy: hsl(47, 100%, 40%);
+}
+
+::-webkit-scrollbar-button {
+  height: 5px;
+}

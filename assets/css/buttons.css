@@ -1,0 +1,36 @@
+@import url(root.css);
+@import url(buttons.css);
+@import url(general.css);
+@import url(reusable.css);
+
+button {
+  color: inherit;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.btn {
+  color: var(--white);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  min-width: 130px;
+  padding: 10px 15px;
+  border: 1px solid var(--golden-puppy);
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background: var(--golden-puppy);
+  color: var(--black);
+}
+
+.btn-primary:is(:hover, :focus) {
+  --golden-puppy: hsl(47, 100%, 45%);
+}
+
+.btn-secondary:is(:hover, :focus) {
+  background: hsla(47, 100%, 45%, 0.1);
+}

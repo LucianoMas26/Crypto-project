@@ -1,0 +1,50 @@
+/* ---------------------HERO---------------- */
+@import url(root.css);
+@import url(buttons.css);
+@import url(general.css);
+@import url(reusable.css);
+
+.hero {
+  padding: 60px 0;
+}
+
+.hero-content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero-title {
+  margin-bottom: 15px;
+}
+
+.hero-title > span {
+  display: inline-block;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--golden-puppy);
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text {
+  color: var(--white);
+  font-size: var(--fs-7);
+  margin-bottom: 20px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-banner {
+  border: 10px solid var(--eerie-black-1);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
